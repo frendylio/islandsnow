@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Island Snow</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body style="margin-top: 50px">
 <div class="ui fixed top borderless secondary menu" style="background-color: #F6F5F5">
@@ -20,16 +20,23 @@
       <a class="fitted item"><i class="search icon"></i></a>
       <a class="fitted item"><i class="user icon"></i></i></a>
       <div class="fitted item">
-        <div class="ui dropdown">
+        <div class="ui dropdown fitted item">
           <div class="text">MY CART</div>
           <i class="shopping cart icon"></i>
           <div class="text">0</div>
           <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">My cart is currently empty</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
 
 <img class="ui centered image" src="logo.png">
 
@@ -126,5 +133,9 @@
   </div>
 </div>
 
+<script>
+  $('.ui.dropdown')
+      .dropdown();
+</script>
 </body>
 </html>
